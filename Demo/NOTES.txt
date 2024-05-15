@@ -1,0 +1,29 @@
+
+
+ 1. make single-Echo system
+
+ 2. clear, run, show verbose output
+
+ 3. edit main.py how_all_outputs=False
+
+ 4. clear, run, again
+
+ 5. edit empty.drawio, add 2nd Echo in sequence
+
+ 6. clear, run, again
+
+ 7. edit empty.drawio, rearrange Echos in parallel
+
+ 8. clear, run, again
+
+ 9. edit main.py show_all_outputs=True
+
+ 10. clear, run, again
+
+ 11. open empty.drawio in emacs
+
+ 12. open empty.drawio.json in emacs
+
+ 13. open demo.json in emacs, point out 0=down, 1=across, 2=up 
+
+
