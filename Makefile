@@ -23,7 +23,7 @@ D2J=${das2jsondir}/das2json
 demo:
 	@cat ${0D} main.py >py0d.py
 	@$(D2J) empty.drawio
-	@python3 py0d.py ${_00_} ${_0D_} "Hello World" main empty.drawio.json
+	@python3 py0d.py ${_00_} ${_0D_} "Hello FoC World" main empty.drawio.json
 
 clean:
 	rm -rf empty.drawio.json
