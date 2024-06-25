@@ -1,16 +1,18 @@
-# slide 1 Title
-- Exploring techniques and notations for augmenting developer experience
-- this demo needs explanation, so I will present a few slides first
-- this is about HOW to create new notations instead of championing a single notation
+# slide 1 Exploring techniques and notations for augmenting developer experience
+- This demo needs explanation, so I will present a few slides first
+- This demo is about HOW to create new notations instead of championing a single notation
+
 # slide 2 Manifesto
 1. we must stop believing that old-fashioned notations meant for printing presses are suitable for programming and reprogramming this new medium
 2. we must use many programming languages and join them together into a workflow for program development
-3. documentation doesn't work - must generate code
+3. documentation doesn't work - documentation must generate code
+
 # slide 3 Function-Based Notation
 - function-based notation is useful for programming calculators and compute-ers
 - function-based notation is stressed beyond its sweet spot for programming other kinds of things, like truly asynchronous actions
 - function-based notation is based on mathematics notation instead of hardware CPUs
   - Alan Kay, even, said that "a computer is more than functions and sets"
+
 # slide 4 Hardware Centric Perspective
 - we have become accustomed to a 1950s biased, mathematical, cost-cutting view of reprogrammable electronic machines
 - using old-fashioned ideas from the 1950s, we are biased towards sharing memory and time-sharing CPUs - this causes accidental complexities and creates the need for workarounds
@@ -19,6 +21,7 @@
   - but, cost-cutting caused us to move away from those ideas
   - cost-cutting forced us to use shared memory and to create development systems that needed extra software to fake out the function-based paradigm
   - in 2024, we can cease to cut these kinds of costs - we can waste machine power to create development workflows that are more like the model of hardware actors
+
 # slide 5 Goal & Definition of Success of this work
 - the goal is to simplify DX - Developer Experience
 - I strongly believe that a simpler DX will lead to invention of simpler UXs for non-programmers
@@ -33,6 +36,7 @@
   - Failure Driven Development - coping with program development where programs have bugs and fail
 	  - we need to make it easy to wipe everything out and to start afresh as we learn about the problems we are trying to solve
 	  - we need to prevent calcification of design ideas that need to be revised, caused by the feeling of investment in partial solutions caused by the notation we use
+
 # slide 6 This Demo
 - This demo will concentrate on only *one* kind of simplification
   - the idea of using different syntaxes for programming
@@ -51,5 +55,30 @@
   - not shown: multiple inputs and outputs, feedback, connection directions (down/up/across/through)
   - this is an implementation technique rather than advocacy for node-and-arrow
   - no prior art - to my knowledge, all existing DPLs are based on synchronous implementations, this technique is fundamentally different
-  
+
+# slide 7 Demo Part 1 Sequetial Flow
+
+# slide 8 Demo Part 2 Parallel Flow
+
+# slide 9 Demo Part 3 XML, JSON, Run
+What's going on underneath the hood?
+
+Draw.io saves diagrams in XML format.
+
+We use an XML parser to inhale the XML and to exhale only the semantically interesting information as JSON. I'm working on doing this with OhmJS instead of using an XML parser library.
+
+Then, we inhale the JSON, create a dictionary of templates, instantiate the system and run it. I'm working on a variation that transpiles the system into raw Python.
+
+# slide 10 Practical Example
+This diagram contains the niggly details for implementing `t2t`.
+
+The first parser transpiles RWR code into JavaScript and feeds it to the second parser.
+
+OMeta2 was developed at VPRI for creating many DSLs. OhmJS is an descendant of OMeta2. Text-to-text translation is so simple that it doesn't need the full power of even OhmJS.
+
+# Slide 11 The End
+DaS and 0D ideas are being used in production by Kagi.com
+
+
+
   
